@@ -1,4 +1,4 @@
-# skateboard-planning
+# skateboard-mvp
 
 A Claude Code (and Codex) skill for planning features as thin, usable releases instead of component by component. It's based on Henrik Kniberg's [Making sense of MVP](https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp): build the skateboard, then the bicycle, then the motorcycle. Don't build one wheel at a time.
 
@@ -12,7 +12,7 @@ When you ask Claude to plan, scope or break down a feature idea, the skill makes
 
 It also borrows from the Riskiest Assumption Test, Jason Cohen's Simple, Lovable, Complete, and Basecamp's Shape Up.
 
-The skill itself lives in [`skills/skateboard-planning/SKILL.md`](skills/skateboard-planning/SKILL.md).
+The skill itself lives in [`skills/skateboard-mvp/SKILL.md`](skills/skateboard-mvp/SKILL.md).
 
 ## Layout
 
@@ -21,7 +21,7 @@ The skill itself lives in [`skills/skateboard-planning/SKILL.md`](skills/skatebo
   plugin.json        # plugin manifest
   marketplace.json   # lets this repo act as a plugin marketplace
 skills/
-  skateboard-planning/
+  skateboard-mvp/
     SKILL.md         # the skill (edit this one)
 scripts/
   sync-to-project.sh # copy the skill into another repo for cloud runs
@@ -34,16 +34,16 @@ The skill is self-contained, so any setup can pull it in.
 **Personal, editable (symlink):**
 
 ```sh
-git clone git@github.com:abhisekmazumdar/skateboard-planning.git ~/Code/skateboard-planning
+git clone git@github.com:abhisekmazumdar/skateboard-mvp.git ~/Code/skateboard-mvp
 mkdir -p ~/.claude/skills
-ln -s ~/Code/skateboard-planning/skills/skateboard-planning ~/.claude/skills/skateboard-planning
+ln -s ~/Code/skateboard-mvp/skills/skateboard-mvp ~/.claude/skills/skateboard-mvp
 ```
 
 **With the `skills` CLI** (this is how `drupal-contrib-claude-skills` installs external skills):
 
 ```sh
-npx skills add abhisekmazumdar/skateboard-planning --skill skateboard-planning --agent claude-code --copy -y
-npx skills add abhisekmazumdar/skateboard-planning --skill skateboard-planning --agent codex --copy -y
+npx skills add abhisekmazumdar/skateboard-mvp --skill skateboard-mvp --agent claude-code --copy -y
+npx skills add abhisekmazumdar/skateboard-mvp --skill skateboard-mvp --agent codex --copy -y
 ```
 
 To bundle it with the Drupal toolkit, add an entry for this repo to that installer's external skills list, like any other upstream skill.
@@ -51,14 +51,14 @@ To bundle it with the Drupal toolkit, add an entry for this repo to that install
 **As a Claude Code plugin:**
 
 ```
-/plugin marketplace add abhisekmazumdar/skateboard-planning
-/plugin install skateboard-planning@abhisek-skateboard-planning
+/plugin marketplace add abhisekmazumdar/skateboard-mvp
+/plugin install skateboard-mvp@abhisek-skateboard-mvp
 ```
 
 **Copied into a project repo** (for Claude Code on the web or GitHub Actions, which only see skills committed to the repo):
 
 ```sh
-~/Code/skateboard-planning/scripts/sync-to-project.sh ~/Code/some-project
+~/Code/skateboard-mvp/scripts/sync-to-project.sh ~/Code/some-project
 ```
 
 Treat those copies as output. Edit the skill here, then sync.
@@ -67,10 +67,10 @@ Pick one method per machine. If you use both the symlink and the plugin, the ski
 
 ## Day-to-day
 
-Edit `skills/skateboard-planning/SKILL.md`, commit, and push. When you make a notable change, bump `version` in `.claude-plugin/plugin.json`. Validate the manifests with:
+Edit `skills/skateboard-mvp/SKILL.md`, commit, and push. When you make a notable change, bump `version` in `.claude-plugin/plugin.json`. Validate the manifests with:
 
 ```sh
-claude plugin validate ~/Code/skateboard-planning
+claude plugin validate ~/Code/skateboard-mvp
 ```
 
 ## Credit

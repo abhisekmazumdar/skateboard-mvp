@@ -6,11 +6,11 @@
 # Usage: scripts/sync-to-project.sh <path-to-project-repo>
 set -euo pipefail
 
-src="$(cd "$(dirname "$0")/.." && pwd)/skills/skateboard-planning"
+src="$(cd "$(dirname "$0")/.." && pwd)/skills/skateboard-mvp"
 project="${1:?usage: $0 <path-to-project-repo>}"
-dest="$project/.claude/skills/skateboard-planning"
+dest="$project/.claude/skills/skateboard-mvp"
 
 mkdir -p "$dest"
 rsync -a --delete --exclude .DS_Store "$src/" "$dest/"
-echo "Synced skateboard-planning -> $dest"
-git -C "$project" status --short -- .claude/skills/skateboard-planning
+echo "Synced skateboard-mvp -> $dest"
+git -C "$project" status --short -- .claude/skills/skateboard-mvp

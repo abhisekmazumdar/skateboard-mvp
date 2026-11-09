@@ -1,9 +1,9 @@
 ---
-name: skateboard-planning
+name: skateboard-mvp
 description: Plan a feature, product or idea as a series of thin, usable releases (skateboard, bicycle, motorcycle) instead of building components layer by layer. Use whenever asked to plan, scope, break down or roadmap a feature idea, a new module or tool, or "how should we build X".
 ---
 
-# Skateboard planning
+# Skateboard MVP
 
 Plan the way Henrik Kniberg describes in "Making sense of MVP" (https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp):
 
