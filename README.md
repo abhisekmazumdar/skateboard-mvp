@@ -4,11 +4,13 @@ A Claude Code (and Codex) skill for planning features as thin, usable releases i
 
 When you ask Claude to plan, scope or break down a feature idea, the skill makes it:
 
-1. Start from the user's need and how they cope today.
-2. Name the riskiest assumptions.
-3. Slice the work into Earliest Testable, Usable and Lovable releases. Each slice records what it tests, who gives feedback, and when to move on.
+1. Start from the user's need, how they cope today, and how much time the problem is worth (the appetite).
+2. Name the riskiest assumptions, and test them without code first when a conversation, fake door or manual run would do.
+3. Slice the work into Earliest Testable, Usable and Lovable releases. The first slice is narrow but complete. Each slice records what it tests, who gives feedback, when to move on, and what it keeps or throws away.
 4. Reject horizontal "layer" slices and polish that comes before feedback.
 5. Break down only the first slice into tasks.
+
+It also borrows from the Riskiest Assumption Test, Jason Cohen's Simple, Lovable, Complete, and Basecamp's Shape Up.
 
 The skill itself lives in [`skills/skateboard-planning/SKILL.md`](skills/skateboard-planning/SKILL.md).
 

@@ -1,7 +1,7 @@
 {
   "name": "skateboard-planning",
   "description": "Plan features as thin, usable releases (skateboard, bicycle, motorcycle) instead of component by component, based on Henrik Kniberg's Making sense of MVP.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "author": { "name": "Abhisek Mazumdar", "email": "12195330+abhisekmazumdar@users.noreply.github.com" },
   "repository": "https://github.com/abhisekmazumdar/skateboard-planning"
