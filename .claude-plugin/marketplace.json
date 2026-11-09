@@ -1,12 +1,12 @@
 {
-  "name": "abhisek-skateboard-planning",
+  "name": "abhisek-skateboard-mvp",
   "owner": { "name": "Abhisek Mazumdar", "email": "12195330+abhisekmazumdar@users.noreply.github.com" },
   "metadata": {
     "description": "Plan features as thin, usable releases (skateboard, bicycle, motorcycle) instead of component by component."
   },
   "plugins": [
     {
-      "name": "skateboard-planning",
+      "name": "skateboard-mvp",
       "source": "./",
       "description": "Plan features as thin, usable releases (skateboard, bicycle, motorcycle) instead of component by component, based on Henrik Kniberg's Making sense of MVP."
     }
